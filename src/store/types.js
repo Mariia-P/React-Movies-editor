@@ -1,0 +1,14 @@
+export const LIKED_MOVIE = 'LIKED_MOVIE';
+
+export const CHANGE_RATING = 'CHANGE_RATING';
+
+export const MOVIE_LIST_LOADED = 'MOVIE_LIST_LOADED';
+export const MOVIE_LIST_LOADING = 'MOVIE_LIST_LOADING';
+export const MOVIE_LIST_LOAD_ERROR = 'MOVIE_LIST_LOAD_ERROR';
+
+export const SORT_MOVIES = 'SORT_MOVIES';
+
+export const CHANGE_SEARCH = 'CHANGE_SEARCH';
+export const RESET_SEARCH = 'RESET_SEARCH';
+
+export const SELECT_MOVIE = 'SELECT_MOVIE';

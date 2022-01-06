@@ -1,0 +1,54 @@
+@import '../../style/variables.scss';
+
+@mixin font_detail($fontWeight, $fontSize, $lineHeight, $color, $textAlign) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+  text-align: $textAlign;
+}
+
+.search {
+  &__wrapper {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    outline: none;
+    border: none;
+    background-color: #ffffff00;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 25px;
+    transition: transform 500ms ease;
+    img {
+      width: 27px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__input {
+    height: 45px;
+    width: 320px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    @include font_detail(400, 15px, 25px, #4d4c49, left);
+
+    &[type='password'] {
+      @include font_detail(400, 30px, 25px, #4d4c49, left);
+    }
+
+    &:focus {
+      border-color: $grey;
+    }
+
+    &-error {
+      border: 1px solid #fd0303;
+    }
+  }
+}

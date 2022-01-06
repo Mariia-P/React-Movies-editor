@@ -1,0 +1,15 @@
+.sort {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__button_group {
+    width: 50%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,18 @@
+.rating {
+  &__wrapper {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__button {
+    border: none;
+    background-color: #ffffff00;
+    margin-right: 0.5rem;
+    cursor: pointer;
+
+    img {
+      width: 1.5rem;
+    }
+  }
+}

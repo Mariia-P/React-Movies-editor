@@ -1,0 +1,21 @@
+.like {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    img {
+      width: 60%;
+    }
+  }
+  &__button {
+    width: 100%;
+    border: none;
+    background-color: #ffffff00;
+    cursor: pointer;
+  }
+  &__dislike {
+    transform: scaleY(-1);
+  }
+}
